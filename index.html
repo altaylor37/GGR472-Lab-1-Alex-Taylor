@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<!--File Management / Importing Bootstrap-->
+<html lang="en" data-bs-theme="dark">
+<head>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>GGR471 Lab 1 AT</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-T3c6CoIi6uLrA9TneNEoa7RxnatzjcDSCmG1MXxSR1GAsXEV/Dwwykc2MPK8M2HN" crossorigin="anonymous">
+</head>
+
+<body>
+<!--Heading Section-->
+<div class="container text-center">
+        <h1>GGR472 Lab 1 - Geospatial Data for the Web</h1>
+        <h3>Alex Taylor</h3>
+</div>
+
+<!--This section is dedicated to the GeoJSON file portion of the lab with the text centered.-->
+<div class="container ">
+    Please find below a GeoJSON file containing a marked up version of the UofT campus. There are three examples of points, lines, and polygons, all of which have been classified
+    using colors and symbols to represent similar groups. 
+    <div><a href="GGR472Lab1UofTCampus.geojson" target="_blank">GeoJSON file of UofT Campus</a></div>
+    <br>
+    These classifications can be best seen in the metadata of each object in the GeoJSON file.<br><br>
+    <div class="row text-center">
+        <div class="col">Points: Blue = UofT Building; Red = TTC Station</div>
+        <div class="col">Lines: Thick = Avenue; Thin = Street</div>
+        <div class="col">Polygons: Grey = UofT Building; Green = Park</div>
+    </div>
+    <div>
+    </div><br>
+    Additional resources for web mapping:
+</div>
+
+<!--This section is dedicated to the external link portion of the lab. Each button has a script that opens the link in a new tab.-->
+<div class="container">
+    <div class = row>
+        <div class="col-sm-4">
+        <div class="card"><!--Card for MapBox including button, image, external link.-->
+            <img class="card-img-top" src="MapBox.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center">MapBox</h5>
+              <p class="card-text">MapBox is a critical API used for displaying maps on webpages.</p>
+              <a href="#" class="btn btn-secondary" id="MapBoxButton">MapBox</a>
+            </div>
+          </div>
+        </div>
+        
+        <div class="col-sm-4">
+        <div class="card"><!--Card for Bootstrap including button, image, external link.-->
+            <img class="card-img-top" src="Bootstrap.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center">Boostrap</h5>
+              <p class="card-text">Bootstrap is an easy way to style an HTML site into columns.</p>
+              <a href="#" class="btn btn-secondary" id="BootstrapButton">Bootstrap Getting Started</a>
+            </div>
+          </div>
+        </div>
+
+        <div class="col-sm-4">
+        <div class="card"><!--Card for W3Schools including button, image, external link.-->
+            <img class="card-img-top" src="W3Schools.png" alt="Card image cap">
+            <div class="card-body">
+              <h5 class="card-title text-center">W3 Schools</h5>
+              <p class="card-text">W3 Schools has a great page on HTML attributes.</p>
+              <a href="#" class="btn btn-secondary" id="W3Button">HTML Attributes</a>
+            </div>
+        </div>
+        </div>
+    </div>
+</div><br><br><br>
+
+<!--Counter ticks up anytime that the site is left via one of the three buttons.-->
+<div class="row text-center">
+  <p id="leaveCounter">Times that you left my beautiful website: 0</p>
+</div>
+
+<!--Connecting scripts-->
+<script src="script.js"></script>
+<script> src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-C6RzsynM9kWDrMNeT87bh95OGNyZPhcTNXj1NW7RuBCsyN/o0jlpcV8Qyq46cDfL" crossorigin="anonymous"></script>
+</body>
+</html> 
